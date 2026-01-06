@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Financial Phishing & Scam Risk Checker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+
+    <h1>Financial Phishing & Scam Risk Checker</h1>
+
+    <p class="description">
+      This web application helps users identify potential financial phishing
+      and scam risks related to UPI messages, banking texts, and fake payment websites.
+    </p>
+
+    <!-- INPUT CARD -->
+    <div class="card">
+
+      <!-- MESSAGE / UPI -->
+      <div class="input-group">
+        <div class="input-label">
+          <h3>Message / UPI Scam Check</h3>
+          <p>Paste SMS, email, or UPI-related message</p>
+        </div>
+        <div class="input-field">
+          <textarea
+            id="messageInput"
+            placeholder="Example: Your account is blocked. Verify OTP now">
+          </textarea>
+        </div>
+      </div>
+
+      <!-- URL CHECK -->
+      <div class="input-group">
+        <div class="input-label">
+          <h3>Banking / Payment Website URL</h3>
+          <p>Check for fake or look-alike financial websites</p>
+        </div>
+        <div class="input-field">
+          <input
+            type="text"
+            id="urlInput"
+            placeholder="https://www.paypal.com">
+        </div>
+      </div>
+
+    </div>
+
+    <!-- BUTTON -->
+    <button onclick="checkRisk()">Check Scam Risk</button>
+
+    <!-- RESULT -->
+    <div id="result" class="result-box"></div>
+
+    <!-- TIPS -->
+    <div class="tips">
+      <h3>Financial Safety Tips</h3>
+      <ul>
+        <li>Banks and payment apps never ask for OTP or PIN</li>
+        <li>Always check website spelling carefully</li>
+        <li>Avoid clicking unknown payment or refund links</li>
+        <li>Verify the sender before making any payment</li>
+      </ul>
+    </div>
+
+    <footer>
+      Educational project for financial scam awareness
+    </footer>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
